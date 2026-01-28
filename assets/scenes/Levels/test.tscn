@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://gblg5inipw00"]
+
+[ext_resource type="PackedScene" uid="uid://dhv25kjhoamgo" path="res://assets/scenes/Player/player_base.tscn" id="1_87c2l"]
+[ext_resource type="Texture2D" uid="uid://d2g0sdblbdjfb" path="res://icon.svg" id="2_mul2q"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_mul2q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jyaof"]
+size = Vector2(980, 20)
+
+[node name="Test Level" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_87c2l")]
+position = Vector2(0, -41)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_mul2q")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource("RectangleShape2D_jyaof")
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(-1, 0)
+scale = Vector2(7.6406245, 0.15625)
+texture = ExtResource("2_mul2q")

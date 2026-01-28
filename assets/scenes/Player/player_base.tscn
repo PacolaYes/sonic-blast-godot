@@ -1,0 +1,41 @@
+[gd_scene load_steps=8 format=3 uid="uid://dhv25kjhoamgo"]
+
+[ext_resource type="Script" uid="uid://65srryxkvboj" path="res://assets/scripts/Player/player_controller.gd" id="1_vjeir"]
+[ext_resource type="Texture2D" uid="uid://gb8lvcs01xut" path="res://assets/sprites/Sonic/idle.png" id="2_hansg"]
+[ext_resource type="Script" uid="uid://3cagk4v8lqwo" path="res://assets/scripts/state_machine.gd" id="3_hansg"]
+[ext_resource type="Script" uid="uid://hxbq03tchfvy" path="res://assets/scripts/Player/States/idle.gd" id="4_jrpex"]
+[ext_resource type="Script" uid="uid://b24tghli8de7" path="res://assets/scripts/Player/States/jump.gd" id="5_v7krg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_j4uox"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_hansg")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kompy"]
+size = Vector2(18, 38)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_vjeir")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_j4uox")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_kompy")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("3_hansg")
+states = Dictionary[String, GDScript]({
+"idle": ExtResource("4_jrpex"),
+"jump": ExtResource("5_v7krg")
+})
+current_state = "idle"

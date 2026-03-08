@@ -21,7 +21,6 @@ func _changeState(state) -> void:
 func _ready() -> void:
 	for key: String in states:
 		state_instances[key] = states[key].new()
-	pass # Replace with function body.
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

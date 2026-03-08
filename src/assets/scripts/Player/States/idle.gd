@@ -4,7 +4,7 @@ func process(player: CharacterBody2D, delta: float):
 	player.handleMovement()
 	
 	if not player.is_on_floor():
-		player.velocity += player.get_gravity() * delta
+		player.handleVerticalMovement(delta)
 		return
 	
 	if Input.is_action_just_pressed("gameplay_jump"):

@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dhv25kjhoamgo"]
+[gd_scene format=3 uid="uid://dhv25kjhoamgo"]
 
 [ext_resource type="Script" uid="uid://65srryxkvboj" path="res://assets/scripts/Player/player_controller.gd" id="1_vjeir"]
 [ext_resource type="Texture2D" uid="uid://gb8lvcs01xut" path="res://assets/sprites/Sonic/idle.png" id="2_hansg"]
@@ -20,19 +20,19 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kompy"]
 size = Vector2(18, 38)
 
-[node name="Player" type="CharacterBody2D"]
+[node name="Player" type="CharacterBody2D" unique_id=1489064507]
 script = ExtResource("1_vjeir")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1048572335]
 sprite_frames = SubResource("SpriteFrames_j4uox")
 animation = &"idle"
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=635819421]
 shape = SubResource("RectangleShape2D_kompy")
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Camera2D" type="Camera2D" parent="." unique_id=931584367]
 
-[node name="StateMachine" type="Node" parent="."]
+[node name="StateMachine" type="Node" parent="." unique_id=1426847876]
 script = ExtResource("3_hansg")
 states = Dictionary[String, GDScript]({
 "idle": ExtResource("4_jrpex"),

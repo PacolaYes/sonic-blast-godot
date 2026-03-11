@@ -1,10 +1,10 @@
 extends Node
 class_name State
 
-func enter(_parent, _prev_state: String, _delta: float):
+func enter(_parent, _prev_state: String):
 	pass
 
-func exit(_parent, _next_state: String, _delta: float):
+func exit(_parent, _next_state: String):
 	pass
 
 func process(_parent, _delta: float):

@@ -6,15 +6,15 @@ class_name StateMachine
 
 var state_instances: Dictionary[String, Object] = {}
 
-func _changeState(state, delta: float) -> void:
+func changeState(state) -> void:
 	var parent = get_parent()
 	
 	if state and state_instances.get(state):
 		if state_instances[current_state].has_method("exit"):
-			state_instances[current_state].exit(parent, state, delta)
+			state_instances[current_state].exit(parent, state)
 		
 		if state_instances[state].has_method("enter"):
-			state_instances[state].enter(parent, current_state, delta)
+			state_instances[state].enter(parent, current_state)
 		
 		current_state = state
 
@@ -32,7 +32,7 @@ func _process(delta: float) -> void:
 		return
 	
 	if state.has_method("process"):
-		_changeState(state.process(parent, delta), delta)
+		changeState(state.process(parent, delta))
 
 func _physics_process(delta: float) -> void:
 	var state: Object = state_instances.get(current_state)
@@ -41,4 +41,4 @@ func _physics_process(delta: float) -> void:
 		return
 	
 	if state.has_method("physics_process"):
-		_changeState(state.physics_process(get_parent(), delta), delta)
+		changeState(state.physics_process(get_parent(), delta))

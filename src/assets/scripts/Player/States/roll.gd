@@ -1,8 +1,7 @@
 extends State
 
-func enter(player: BasePlayer, _prevState, _delta):
+func enter(player: BasePlayer, _prevState):
 	player.animation_player.play("roll")
-	pass
 
 func process(player: BasePlayer, _delta: float):
 	if player.velocity.x == 0:

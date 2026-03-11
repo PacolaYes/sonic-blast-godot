@@ -38,4 +38,4 @@ polygon = PackedVector2Array(-63, -242, 63, -243, 63, -215, 45, -201, -49, -202,
 position = Vector2(-226, 669)
 
 [node name="Enemy" parent="." unique_id=1970452822 instance=ExtResource("3_jyaof")]
-position = Vector2(-174, 659)
+position = Vector2(-171, 651)

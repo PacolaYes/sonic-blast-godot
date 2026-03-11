@@ -2,7 +2,7 @@ extends State
 
 var maxspd_anim = false
 
-func enter(_player: BasePlayer, _prevState, _delta):
+func enter(_player: BasePlayer, _prevState):
 	maxspd_anim = false
 
 func process(player: BasePlayer, _delta: float):
@@ -26,6 +26,8 @@ func process(player: BasePlayer, _delta: float):
 			anim = "run"
 		else:
 			anim = "walk"
+	elif Input.is_action_pressed("gameplay_up"):
+		anim = "look up"
 	
 	player.animation_player.play(anim)
 

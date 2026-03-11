@@ -2,7 +2,7 @@ extends State
 
 var spindash = false
 
-func enter(_player, _prevState, _delta):
+func enter(_player, _prevState):
 	spindash = false
 
 func process(player: BasePlayer, _delta):

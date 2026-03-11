@@ -1,10 +1,13 @@
-extends Node
+extends State
 
-func process(player: CharacterBody2D, delta: float):
-	player.handleMovement()
-	
+var maxspd_anim = false
+
+func enter(_player: BasePlayer, _prevState, _delta):
+	maxspd_anim = false
+
+func process(player: BasePlayer, _delta: float):
 	if not player.is_on_floor():
-		player.handleVerticalMovement(delta)
+		player.animation_player.play("walk")
 		return
 	
 	if Input.is_action_just_pressed("gameplay_jump"):
@@ -16,8 +19,19 @@ func process(player: CharacterBody2D, delta: float):
 			return "roll"
 		return "crouch"
 	
+	var anim = "idle"
 	if isMoving:
 		player.sprite.flip_h = clampf(player.velocity.x, -1, 1) > 0
+		if abs(player.velocity.x) >= player.run_anim_speed * 60:
+			anim = "run"
+		else:
+			anim = "walk"
+	
+	player.animation_player.play(anim)
 
-func physics_process(player: CharacterBody2D, _delta: float):
+func physics_process(player: BasePlayer, delta: float):
+	player.handleMovement(delta)
+	if not player.is_on_floor():
+		player.handleVerticalMovement(delta)
+	
 	player.move_and_slide()

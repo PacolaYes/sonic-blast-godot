@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://djhib6fuinf1j"]
+
+[ext_resource type="Texture2D" uid="uid://k4nwj4amjn4k" path="res://assets/sprites/Enemies/Egg Saucer/saucer1.png" id="1_0tb8e"]
+[ext_resource type="Script" uid="uid://dkd3hp6y6en2o" path="res://assets/scripts/Enemies/enemy.gd" id="1_d1kb6"]
+[ext_resource type="Texture2D" uid="uid://8owwpom5jdy3" path="res://assets/sprites/Enemies/Egg Saucer/saucer2.png" id="2_fkvc1"]
+[ext_resource type="Script" uid="uid://bbq1f2cgh6eua" path="res://assets/scripts/hurtbox.gd" id="3_fkvc1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_d1kb6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_0tb8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_fkvc1")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_m1tvv"]
+size = Vector2(22, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d1kb6"]
+size = Vector2(22, 30)
+
+[node name="Enemy" type="CharacterBody2D" unique_id=1970452822]
+collision_layer = 2
+script = ExtResource("1_d1kb6")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1942319454]
+sprite_frames = SubResource("SpriteFrames_d1kb6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=737516826]
+shape = SubResource("RectangleShape2D_m1tvv")
+
+[node name="Hurtbox" type="Area2D" parent="." unique_id=1302002548]
+script = ExtResource("3_fkvc1")
+metadata/_custom_type_script = "uid://bbq1f2cgh6eua"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox" unique_id=4676626]
+shape = SubResource("RectangleShape2D_d1kb6")
+
+[connection signal="area_entered" from="Hurtbox" to="Hurtbox" method="_on_area_entered"]

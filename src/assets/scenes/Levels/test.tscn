@@ -2,6 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://dhv25kjhoamgo" path="res://assets/scenes/Player/player_base.tscn" id="1_87c2l"]
 [ext_resource type="Texture2D" uid="uid://c7hijproe5uv5" path="res://rvz3.png" id="1_mul2q"]
+[ext_resource type="PackedScene" uid="uid://djhib6fuinf1j" path="res://assets/scenes/Enemies/enemy.tscn" id="3_jyaof"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_mul2q"]
 
@@ -35,3 +36,6 @@ polygon = PackedVector2Array(-63, -242, 63, -243, 63, -215, 45, -201, -49, -202,
 
 [node name="Player" parent="." unique_id=946536438 instance=ExtResource("1_87c2l")]
 position = Vector2(-226, 669)
+
+[node name="Enemy" parent="." unique_id=1970452822 instance=ExtResource("3_jyaof")]
+position = Vector2(-174, 659)

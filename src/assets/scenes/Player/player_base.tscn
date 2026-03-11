@@ -1,41 +1,46 @@
 [gd_scene format=3 uid="uid://dhv25kjhoamgo"]
 
 [ext_resource type="Script" uid="uid://65srryxkvboj" path="res://assets/scripts/Player/player_controller.gd" id="1_vjeir"]
-[ext_resource type="Texture2D" uid="uid://gb8lvcs01xut" path="res://assets/sprites/Sonic/Idle/idle.png" id="2_hansg"]
+[ext_resource type="Texture2D" uid="uid://gb8lvcs01xut" path="res://assets/sprites/Player/Sonic/Idle/idle.png" id="2_hansg"]
 [ext_resource type="Script" uid="uid://3cagk4v8lqwo" path="res://assets/scripts/State Machine/state_machine.gd" id="3_hansg"]
 [ext_resource type="Script" uid="uid://hxbq03tchfvy" path="res://assets/scripts/Player/States/idle.gd" id="4_jrpex"]
 [ext_resource type="Script" uid="uid://b24tghli8de7" path="res://assets/scripts/Player/States/jump.gd" id="5_v7krg"]
 [ext_resource type="Script" uid="uid://c1m64fweeg43x" path="res://assets/scripts/Player/States/crouch.gd" id="6_glw7i"]
 [ext_resource type="Script" uid="uid://bwv6po8rmppke" path="res://assets/scripts/Player/States/roll.gd" id="7_846ob"]
-[ext_resource type="Texture2D" uid="uid://pecwkl3ffhtp" path="res://assets/sprites/Sonic/Crouch/crouch.png" id="7_tb4u6"]
-[ext_resource type="Texture2D" uid="uid://7l483u41dt8w" path="res://assets/sprites/Sonic/Roll/ball.png" id="8_7xfas"]
-[ext_resource type="Texture2D" uid="uid://brvpx7m84s8gn" path="res://assets/sprites/Sonic/Spindash/spindash1.png" id="8_cuslh"]
-[ext_resource type="Texture2D" uid="uid://c1rv8nj5fctyi" path="res://assets/sprites/Sonic/Roll/roll4.png" id="9_66qmg"]
-[ext_resource type="Texture2D" uid="uid://sv6y6ie6su60" path="res://assets/sprites/Sonic/Spindash/spindash2.png" id="9_rn1lx"]
-[ext_resource type="Texture2D" uid="uid://mxt68g86y2gw" path="res://assets/sprites/Sonic/Spindash/spindash3.png" id="10_bgbry"]
-[ext_resource type="Texture2D" uid="uid://cqh4sctxakfou" path="res://assets/sprites/Sonic/Roll/roll2.png" id="10_suws0"]
-[ext_resource type="Texture2D" uid="uid://bgwqjc1crur3w" path="res://assets/sprites/Sonic/Roll/roll1.png" id="11_g1i34"]
-[ext_resource type="Texture2D" uid="uid://nrc4roru4d4h" path="res://assets/sprites/Sonic/Walk/walk1.png" id="11_rn1lx"]
-[ext_resource type="Texture2D" uid="uid://br3lgaj6r1ubu" path="res://assets/sprites/Sonic/Roll/roll5.png" id="12_842fk"]
-[ext_resource type="Texture2D" uid="uid://bdlyt2q8w7tfd" path="res://assets/sprites/Sonic/Walk/walk2.png" id="12_wmtek"]
-[ext_resource type="Texture2D" uid="uid://dhivy3guogtd3" path="res://assets/sprites/Sonic/Roll/roll3.png" id="13_0scd2"]
-[ext_resource type="Texture2D" uid="uid://cln5ljcdd1d2o" path="res://assets/sprites/Sonic/Walk/walk3.png" id="13_7yjv2"]
-[ext_resource type="Texture2D" uid="uid://dncg75vg0eu3x" path="res://assets/sprites/Sonic/Run/run1.png" id="14_dv577"]
-[ext_resource type="Texture2D" uid="uid://cd4ggrbcmdsfn" path="res://assets/sprites/Sonic/Walk/walk4.png" id="14_wxbnf"]
-[ext_resource type="Texture2D" uid="uid://7vi7n5mpswv1" path="res://assets/sprites/Sonic/Walk/walk6.png" id="15_6qjxl"]
-[ext_resource type="Texture2D" uid="uid://bourn5nnf4uk8" path="res://assets/sprites/Sonic/Run/run2.png" id="15_846ob"]
-[ext_resource type="Texture2D" uid="uid://b0wcno0mqqnmx" path="res://assets/sprites/Sonic/Walk/walk7.png" id="16_d2dw6"]
-[ext_resource type="Texture2D" uid="uid://cqh07s4tjrwdy" path="res://assets/sprites/Sonic/Run/run3.png" id="16_w0dw1"]
-[ext_resource type="Texture2D" uid="uid://cjwt0f0f5q7pp" path="res://assets/sprites/Sonic/Run/run4.png" id="17_5818s"]
-[ext_resource type="Texture2D" uid="uid://bke2ta4ay0mdb" path="res://assets/sprites/Sonic/Walk/walk8.png" id="17_t6tdw"]
-[ext_resource type="Texture2D" uid="uid://b5qkqyejd3hyw" path="res://assets/sprites/Sonic/Run/run5.png" id="18_bkli2"]
-[ext_resource type="Texture2D" uid="uid://do0iylqvgb1gr" path="res://assets/sprites/Sonic/Run/run6.png" id="19_api56"]
+[ext_resource type="Texture2D" uid="uid://pecwkl3ffhtp" path="res://assets/sprites/Player/Sonic/Crouch/crouch.png" id="7_tb4u6"]
+[ext_resource type="Texture2D" uid="uid://7l483u41dt8w" path="res://assets/sprites/Player/Sonic/Roll/ball.png" id="8_7xfas"]
+[ext_resource type="Texture2D" uid="uid://brvpx7m84s8gn" path="res://assets/sprites/Player/Sonic/Spindash/spindash1.png" id="8_cuslh"]
+[ext_resource type="Texture2D" uid="uid://c1rv8nj5fctyi" path="res://assets/sprites/Player/Sonic/Roll/roll4.png" id="9_66qmg"]
+[ext_resource type="Texture2D" uid="uid://sv6y6ie6su60" path="res://assets/sprites/Player/Sonic/Spindash/spindash2.png" id="9_rn1lx"]
+[ext_resource type="Texture2D" uid="uid://mxt68g86y2gw" path="res://assets/sprites/Player/Sonic/Spindash/spindash3.png" id="10_bgbry"]
+[ext_resource type="Texture2D" uid="uid://cqh4sctxakfou" path="res://assets/sprites/Player/Sonic/Roll/roll2.png" id="10_suws0"]
+[ext_resource type="Texture2D" uid="uid://bgwqjc1crur3w" path="res://assets/sprites/Player/Sonic/Roll/roll1.png" id="11_g1i34"]
+[ext_resource type="Texture2D" uid="uid://nrc4roru4d4h" path="res://assets/sprites/Player/Sonic/Walk/walk1.png" id="11_rn1lx"]
+[ext_resource type="Texture2D" uid="uid://br3lgaj6r1ubu" path="res://assets/sprites/Player/Sonic/Roll/roll5.png" id="12_842fk"]
+[ext_resource type="Texture2D" uid="uid://bdlyt2q8w7tfd" path="res://assets/sprites/Player/Sonic/Walk/walk2.png" id="12_wmtek"]
+[ext_resource type="Texture2D" uid="uid://dhivy3guogtd3" path="res://assets/sprites/Player/Sonic/Roll/roll3.png" id="13_0scd2"]
+[ext_resource type="Texture2D" uid="uid://cln5ljcdd1d2o" path="res://assets/sprites/Player/Sonic/Walk/walk3.png" id="13_7yjv2"]
+[ext_resource type="Texture2D" uid="uid://dncg75vg0eu3x" path="res://assets/sprites/Player/Sonic/Run/run1.png" id="14_dv577"]
+[ext_resource type="Texture2D" uid="uid://cd4ggrbcmdsfn" path="res://assets/sprites/Player/Sonic/Walk/walk4.png" id="14_wxbnf"]
+[ext_resource type="Texture2D" uid="uid://7vi7n5mpswv1" path="res://assets/sprites/Player/Sonic/Walk/walk6.png" id="15_6qjxl"]
+[ext_resource type="Texture2D" uid="uid://bourn5nnf4uk8" path="res://assets/sprites/Player/Sonic/Run/run2.png" id="15_846ob"]
+[ext_resource type="Texture2D" uid="uid://b0wcno0mqqnmx" path="res://assets/sprites/Player/Sonic/Walk/walk7.png" id="16_d2dw6"]
+[ext_resource type="Texture2D" uid="uid://cqh07s4tjrwdy" path="res://assets/sprites/Player/Sonic/Run/run3.png" id="16_w0dw1"]
+[ext_resource type="Texture2D" uid="uid://cjwt0f0f5q7pp" path="res://assets/sprites/Player/Sonic/Run/run4.png" id="17_5818s"]
+[ext_resource type="Texture2D" uid="uid://bke2ta4ay0mdb" path="res://assets/sprites/Player/Sonic/Walk/walk8.png" id="17_t6tdw"]
+[ext_resource type="Texture2D" uid="uid://b5qkqyejd3hyw" path="res://assets/sprites/Player/Sonic/Run/run5.png" id="18_bkli2"]
+[ext_resource type="Texture2D" uid="uid://do0iylqvgb1gr" path="res://assets/sprites/Player/Sonic/Run/run6.png" id="19_api56"]
+[ext_resource type="Script" uid="uid://bwqr0dg3dstpc" path="res://assets/scripts/hitbox.gd" id="31_w0dw1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kompy"]
 size = Vector2(20, 38)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5818s"]
+size = Vector2(20, 38)
+
 [sub_resource type="Animation" id="Animation_n7oyj"]
 length = 0.001
+step = 1.0
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -83,6 +88,54 @@ tracks/3/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(0, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Hitbox/CollisionShape2D:shape:size")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(20, 38)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Hitbox:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Hitbox/CollisionShape2D:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Hitbox/CollisionShape2D:shape")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [SubResource("RectangleShape2D_5818s")]
 }
 
 [sub_resource type="Animation" id="Animation_jr2if"]
@@ -137,6 +190,18 @@ tracks/3/keys = {
 "update": 0,
 "values": [Vector2(0, 5)]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Hitbox/CollisionShape2D:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_cuslh"]
 resource_name = "idle"
@@ -189,6 +254,18 @@ tracks/3/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(0, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Hitbox/CollisionShape2D:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="Animation" id="Animation_dv577"]
@@ -244,6 +321,42 @@ tracks/3/keys = {
 "update": 0,
 "values": [Vector2(0, 7)]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Hitbox/CollisionShape2D:shape:size")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(20, 24)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Hitbox:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 7)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Hitbox/CollisionShape2D:disabled")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
 
 [sub_resource type="Animation" id="Animation_3uv7b"]
 resource_name = "run"
@@ -298,6 +411,18 @@ tracks/3/keys = {
 "update": 0,
 "values": [Vector2(0, 0)]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Hitbox/CollisionShape2D:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_v7dto"]
 resource_name = "spindash"
@@ -347,6 +472,42 @@ tracks/3/path = NodePath("CollisionShape2D:position")
 tracks/3/interp = 1
 tracks/3/loop_wrap = true
 tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 5)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Hitbox/CollisionShape2D:shape:size")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2(20, 28)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Hitbox/CollisionShape2D:disabled")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Hitbox:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
@@ -406,6 +567,18 @@ tracks/3/keys = {
 "update": 1,
 "values": [Vector2(20, 38)]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Hitbox/CollisionShape2D:disabled")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0.005),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_rn1lx"]
 _data = {
@@ -419,6 +592,7 @@ _data = {
 }
 
 [node name="Player" type="CharacterBody2D" unique_id=1489064507]
+collision_layer = 2
 floor_constant_speed = true
 script = ExtResource("1_vjeir")
 
@@ -445,3 +619,11 @@ metadata/_custom_type_script = "uid://3cagk4v8lqwo"
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=20194611]
 callback_mode_process = 0
 libraries/ = SubResource("AnimationLibrary_rn1lx")
+
+[node name="Hitbox" type="Area2D" parent="." unique_id=1980187821]
+script = ExtResource("31_w0dw1")
+metadata/_custom_type_script = "uid://bwqr0dg3dstpc"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox" unique_id=1715493880]
+shape = SubResource("RectangleShape2D_5818s")
+disabled = true

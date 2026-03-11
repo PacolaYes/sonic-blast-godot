@@ -1,2 +1,5 @@
-# sonic-blast
-Godot 4.4(.1) project aiming to feel like Sonic Blast, released for the Sega Game Gear and Master System (in Brazil)
+# Sonic Blast
+This project is aiming to recreate Sonic Blast in Godot 4, as a way to learn how Godot works and also how Sonic Blast's physics work at a more detailed level. 
+ 
+## TO-DO: 
+- make to-do

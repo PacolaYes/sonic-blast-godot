@@ -861,6 +861,7 @@ size = Vector2(20, 38)
 [node name="Player" type="CharacterBody2D" unique_id=1489064507]
 collision_layer = 2
 floor_constant_speed = true
+floor_snap_length = 10.0
 script = ExtResource("1_vjeir")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1050314224]
